@@ -373,8 +373,8 @@ app.get('/', (req, res) => {
     console.log('render home: after')
 })
 
-
-app.listen(3000, () => {
+var port = 3000 || 8080;
+app.listen(port, () => {
     console.log('server running at port: 3000')
     console.log('vao day: ' + bangquang11)
 })
