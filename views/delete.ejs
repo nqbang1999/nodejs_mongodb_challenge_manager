@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+    <link rel="stylesheet" href="delete.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+
+<div class="container">
+<!--    <form action="/bangquang11/delete" method="post">-->
+    <div class="button">
+        <div class="button__back">
+            <a href="/" ><span style="font-size: 67px; font-weight: bold" class="material-icons">west</span></a>
+        </div>
+    </div>
+        <div class="warning">
+            <div class="warning__confirm">
+                <span class="warning__confirm__desc">Delete media?</span>
+            </div>
+            <div class="warning__warn">
+                <div>
+                    <span class="warning__warn__desc">Are you sure you want to delete "<%= challenge.title %>"?</span> <br>
+                </div>
+                <span class="warning__warn__desc__2">You can't undo this action.</span>
+            </div>
+            <div class="warning__warning">
+                <div class="warning__warning__header">
+                    <span class="warning__warning__header__icon"><span class="material-icons" style="font-size: 170%">warning</span></span>
+                    <span class="warning__warning__header__text">Warning</span>
+                </div>
+                <div class="warning__warning__content">
+                    <span class="warning__warning__content__desc">By deleting this challenge with below id, data will be lost forever.</span>
+                </div>
+            </div>
+            <form action="/bangquang11/delete" method="post">
+                <div class="warning__idChallenge">
+                    <textarea rows="1px" cols="25px" name="id" class="post-title-text" readonly><%= challenge.id %></textarea>
+                </div>
+                <div class="warning__button">
+                    <button class="warning__button__delete">Delete challenge <span style="color: white" class="material-icons">delete</span></button>
+                </div>
+            </form>
+        </div>
+<!--    </form>-->
+</div>
+<!--<form action="/bangquang11/delete" method="post">-->
+<!--    <h1> Are you sure ??? </h1>-->
+
+<!--    <div class="post-title">-->
+<!--        <textarea name="id" class="post-title-text" readonly><%= challenge._id %></textarea>-->
+<!--    </div>-->
+<!--    <div class="post-title">-->
+<!--        <textarea  name="title" class="post-title-text" placeholder="Title"><%= challenge.title %></textarea>-->
+<!--    </div>-->
+<!--    <div class="post-button">-->
+<!--        <button class="post-button-create">Delete</button>-->
+<!--    </div>-->
+<!--</form>-->
+
+
+
+</body>
+</html>

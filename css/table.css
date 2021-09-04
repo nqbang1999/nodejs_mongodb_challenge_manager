@@ -1,0 +1,38 @@
+.table {
+    width: 100%;
+    text-align: -webkit-match-parent;
+    border-collapse: collapse;
+    /*border: none;*/
+    /*border-spacing: 0;*/
+}
+
+.container {
+    max-width: unset;
+}
+
+.table__column {
+    background-color: #f8f9fd;
+
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.detail__status__button {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 5px;
+    border: unset;
+    font-size: 90%;
+}
+
+.detail {
+    height: 50px;
+    font-size: 150%;
+}
+
+.material-icons {
+    font-size: 67px;
+    color: black;
+    font-weight: bold;
+}

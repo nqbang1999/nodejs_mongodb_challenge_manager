@@ -1,0 +1,31 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.button__back {
+    padding-top: 7%;
+    padding-left: 3%;
+}
+
+.material-icons {
+    font-size: 67px;
+    color: black;
+    font-weight: bold;
+}
+
+.challenge__title {
+    padding-top: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.challenge__title__text {
+    font-size: 120px;
+    font-weight: bolder;
+}
+
+.challenge__note {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 53px;
+}

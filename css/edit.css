@@ -1,0 +1,130 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 350%;
+}
+
+.container-post {
+    justify-content: center;
+    width: 100%;
+}
+
+.post {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 2px 8px 29px -6px black;
+}
+
+.container {
+    justify-content: center;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.intro {
+    text-align: center;
+    /*font-size: 62px;*/
+    padding-top: 8%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.post-title {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.post-title-text {
+    border-color: lightgray;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 8px;
+}
+
+.post-content {
+    text-align: center;
+}
+
+.post-content-text {
+    border-color: lightgray;
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 8px;
+}
+
+.post-upload {
+    padding-left: 11%;
+    padding-bottom: 4%;
+}
+
+.post-button {
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.post-button-create {
+    height: 161px;
+    background-color: coral;
+    color: white;
+    border: none;
+    width: 54%;
+    border-radius: 8px;
+    box-shadow: 2px 3px 8px -1px black;
+    font-size: 223%;
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+.post-button-cancel {
+    height: 31px;
+    background-color: #86d29f;
+    color: white;
+    border: none;
+    width: 107px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px 0px darkcyan;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.post-title-text {
+    font-weight: lighter;
+    font-family: cursive;
+}
+
+.material-icons {
+    font-size: 300%;
+    /*box-shadow: 2px 3px 9px -2px;*/
+}
+
+.button__back {
+    margin-left: 2%;
+}
+
+.challenge__status {
+    padding-left: 2%;
+    padding-bottom: 4%;
+    /*font-size: 252%;*/
+}
+
+/*@media only screen and (max-width: 513px) {*/
+/*    .container {*/
+/*        justify-content: center;*/
+/*        width: 90%;*/
+/*        padding-top: 7%;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 360px) {*/
+/*    .post-button {*/
+/*        display: block;*/
+/*    }*/
+/*    .post-button-cancel {*/
+/*        width: 60px;*/
+/*    }*/
+/*    .post-button-create {*/
+/*        width: 60px;*/
+/*    }*/
+/*}*/
+

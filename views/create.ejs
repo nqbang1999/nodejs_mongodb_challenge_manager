@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="button">
+    <div class="button__back">
+        <a href="/" ><span style="font-size: 67px; color: black; font-weight: bold" class="material-icons">west</span></a>
+    </div>
+</div>
+<form action="/bangquang11/create" method="post">
+    <div class="container">
+        <div class="container-post">
+            <div class="post">
+                <div class="intro">
+                    <span class="intro-title">bangquang11</span>
+                </div>
+                <div class="post-title">
+                    <textarea  name="title" class="post-title-text" placeholder="Enter challenge name"></textarea>
+                </div>
+                <div class="post-content">
+                    <textarea  name="note" class="post-content-text" placeholder="Note"></textarea>
+                </div>
+                <div class="post-title">
+                    <span class="post-title-text">Deadline</span>
+                    <input style="font-size: 100%;" type="date" id="finishDay" name="finishDay">
+                </div>
+                <div class="post-button">
+                    <button (click)="onSubmit()" class="post-button-create">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,143 @@
+.container {
+    width: 80%;
+    /*background-color: #c9dce4;*/
+    /*background-image: url('https://cdn.dribbble.com/users/3668766/screenshots/16347225/media/93940315a6c4b1d338e709390152d05e.jpg?compress=1&resize=1200x900');*/
+    /*background-image: url("https://cdn.dribbble.com/users/1463082/screenshots/9680309/media/15b2ace858aeba0a24e60d7b89b1c747.jpg?compress=1&resize=1200x900");*/
+    /*background-image: url("https://cdn.dribbble.com/users/3956332/screenshots/16050048/media/4d9e296c763a0892432b21b608f6cee1.png?compress=1&resize=800x600");*/
+    background-image: url("https://cdn.dribbble.com/users/1570263/screenshots/16357258/media/e06d9c96812b04a55f6cad3c06f0da96.jpg?compress=1&resize=1200x900");
+    /*background-image: url("https://cdn.dribbble.com/users/301809/screenshots/16361417/media/ae5e585aaad8d6778b50a2002d734544.png?compress=1&resize=1200x900");*/
+    margin-left: 10%;
+    border-radius: 18px;
+    box-shadow: 4px 1px 10px 2px grey;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 5%;
+}
+
+.challenge {
+    color: rebeccapurple;
+    /*color: gainsboro;*/
+    /*color: #004076;*/
+}
+
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.challenge__title {
+    padding-left: 15%;
+    width: 40%;
+    padding-top: 17%;
+}
+
+.challenge__title__text {
+    font-size: 300%;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    /*color: #004076;*/
+}
+
+.challenge__start {
+    padding-top: 2%;
+    padding-left: 15%;
+    font-size: 188%;
+    font-family: 'Varela Round', sans-serif;
+    /*font-weight: bold;*/
+    /*color: #004076;*/
+}
+
+.challenge__end {
+    padding-top: 2%;
+    padding-left: 15%;
+    font-size: 188%;
+    font-family: 'Varela Round', sans-serif;
+    /*font-weight: bold;*/
+    /*color: #004076;*/
+}
+
+.challenge__left__title {
+    padding-top: 27%;
+    padding-left: 15%;
+    font-size: 200%;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    /*color: #004076;*/
+}
+
+.challenge__left__day {
+    padding-top: 2%;
+    padding-left: 15%;
+    font-size: 600%;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    /*color: #004076;*/
+}
+
+.challenge__button {
+    padding-top: 4%;
+    padding-left: 15%;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    /*color: #004076;*/
+    width: 70%;
+    display: flex;
+    padding-bottom: 10%;
+}
+
+.challenge__button__done {
+    font-size: 188%;
+    font-family: 'Varela Round', sans-serif;
+    /*color: #004076;*/
+    font-weight: bold;
+    width: 33%;
+    border: unset;
+    /*background-color: #c9dce4;*/
+    text-align: left;
+}
+
+.challenge__button__note {
+    font-size: 188%;
+    font-family: 'Varela Round', sans-serif;
+    /*color: #004076;*/
+    font-weight: bold;
+    width: 33%;
+    border: unset;
+    /*background-color: #c9dce4;*/
+    text-align: center;
+}
+
+.challenge__button__more {
+    font-size: 188%;
+    font-family: 'Varela Round', sans-serif;
+    /*color: #004076;*/
+    font-weight: bold;
+    width: 33%;
+    border: unset;
+    /*background-color: #c9dce4;*/
+    text-align: right;
+}
+
+.navigation {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 400%;
+    background: local;
+    border-radius: 37px;
+    margin-top: 5%;
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+.navigation__container {
+    text-align-last: justify;
+}
+
+.material-icons {
+    box-shadow: 2px 3px 9px -2px;
+    color: black;
+}

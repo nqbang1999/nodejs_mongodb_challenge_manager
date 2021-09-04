@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> bangquang11 </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+<div class="navigation__container">
+    <div class="navigation">
+        <a href="/create" class="navigation__create"><span class="material-icons" style="font-size: 100%;color: black">add</span></a>
+        <a href="/" class="navigation__home"><span class="material-icons" style="font-size: 100%">home</span></a>
+        <a href="/table" class="navigation__manage"><span class="material-icons" style="font-size: 100%">analytics</span></a>
+<!--        <a class="navigation__victory"><span class="material-icons" style="font-size: 100%">done</span></a>-->
+<!--        <a class="navigation__defeat"><span class="material-icons" style="font-size: 100%">unpublished</span></a>-->
+    </div>
+
+</div>
+<% for (var i = 0; i < challenges.length; i++) { %>
+<div class="container">
+    <div class="challenge">
+        <div class="challenge__title">
+            <span class="challenge__title__text"><%= challenges[i].title %></span>
+        </div>
+
+        <div class="challenge__start">
+            <span class="challenge__start__text"><%= challenges[i].startDay %></span>
+        </div>
+
+        <div class="challenge__end">
+            <span class="challenge__end__text"><%= challenges[i].finishDay %></span>
+        </div>
+
+        <div class="challenge__left__title">
+            <span class="challenge__left__title_text">left...</span>
+        </div>
+
+        <div class="challenge__left__day">
+            <span class="challenge__left__day__text"><%= challenges[i].daysLeft %> day(s)</span>
+        </div>
+
+        <div class="challenge__button">
+            <a class="challenge__button__done"><%= challenges[i].status %></a>
+            <a href="/note?id=<%= challenges[i].id %>" class="challenge__button__note">Notes</a>
+            <a href="/edit?id=<%= challenges[i].id %>" class="challenge__button__more">Edit</a>
+        </div>
+
+    </div>
+
+
+</div>
+<%} %>
+
+</body>
+</html>
