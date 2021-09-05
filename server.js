@@ -286,19 +286,26 @@ route.post('/bangquang11/delete', deleteChallenge);
 const axios = require('axios')
 
 homeRoute = (req, res) => {
-    // make a req api
-    axios.get('http://localhost:3000/bangquang11/updateByCurrentTime')
-        .then(function () {
-            console.log('qua updateByCurrentTime chua')
-        })
+    try {
+        // make a req api
+        axios.get('http://localhost:3000/bangquang11/updateByCurrentTime')
+            .then(function () {
+                console.log('qua updateByCurrentTime chua')
+            })
+    } catch (err) {
+        next(err);
+    }
 
-    axios.get('http://localhost:3000/bangquang11/all')
-        .then(function (response) {
-            res.render('home', {challenges: response.data});
-        })
-        .catch(err => {
-            res.send(err)
-        })
+    try {
+        axios.get('http://localhost:3000/bangquang11/all')
+            .then(function (response) {
+                res.render('home', {challenges: response.data});
+            })
+
+    } catch (err) {
+        next(err)
+    }
+
 }
 route.get('/', homeRoute);
 
@@ -367,11 +374,11 @@ app.use(express.static(__dirname + '/js'));
 
 
 
-app.get('/', (req, res) => {
-    console.log('render home: before')
-    res.render('home')
-    console.log('render home: after')
-})
+// app.get('/', (req, res) => {
+//     console.log('render home: before')
+//     res.render('home')
+//     console.log('render home: after')
+// })
 
 const port = process.env.PORT || 80;
 app.listen(port, () => {
