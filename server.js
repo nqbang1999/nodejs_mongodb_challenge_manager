@@ -286,20 +286,25 @@ route.post('/bangquang11/delete', deleteChallenge);
 const axios = require('axios')
 
 homeRoute = (req, res) => {
+    try {
         // make a req api
         axios.get('http://localhost:3000/bangquang11/updateByCurrentTime')
             .then(function () {
                 console.log('qua updateByCurrentTime chua')
             }).catch(err => {
-            throw error})
+            throw err})
 
-    axios.get('http://localhost:3000/bangquang11/all')
-        .then(function (response) {
-            res.render('home', {challenges: response.data});
-        })
-        .catch(err => {
-            throw err
-        })
+        axios.get('http://localhost:3000/bangquang11/all')
+            .then(function (response) {
+                res.render('home', {challenges: response.data});
+            })
+            .catch(err => {
+                throw err
+            })
+    } catch (error) {
+        throw error
+    }
+
 }
 route.get('/', homeRoute);
 
