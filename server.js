@@ -288,13 +288,13 @@ const axios = require('axios')
 homeRoute = (req, res) => {
     try {
         // make a req api
-        axios.get('http://localhost:3000/bangquang11/updateByCurrentTime')
+        axios.get('https://nodejs-mongo-challenge-manage.herokuapp.com/bangquang11/updateByCurrentTime')
             .then(function () {
                 console.log('qua updateByCurrentTime chua')
             }).catch(err => {
             throw err;})
 
-        axios.get('http://localhost:3000/bangquang11/all')
+        axios.get('https://nodejs-mongo-challenge-manage.herokuapp.com/bangquang11/all')
             .then(function (response) {
                 res.render('home', {challenges: response.data});
             })
@@ -311,9 +311,7 @@ route.get('/', homeRoute);
 noteRoute = (req, res) => {
     console.log('noteRoute: vao day chua')
     console.log('noteRoute: lay ra id tu url= ' + req.query.id)
-    // console.log('API: ' + 'http://localhost:3000/bangquang11/note/' + {params: {id: req.query.id}})
-    axios.get('http://localhost:3000/bangquang11/note', {params: {id: req.query.id}})
-    // axios.get('http://localhost:3000/bangquang11/note/:id')
+    axios.get('https://nodejs-mongo-challenge-manage.herokuapp.com/bangquang11/note', {params: {id: req.query.id}})
         .then(function (response) {
             console.log('noteRoute: goi dc api chua')
             res.render('note', {challenge: response.data});
@@ -329,7 +327,7 @@ route.get('/create', (req, res) => {
 });
 
 editRoute = (req, res) => {
-    axios.get('http://localhost:3000/bangquang11/getOne', {params: {id: req.query.id}})
+    axios.get('https://nodejs-mongo-challenge-manage.herokuapp.com/bangquang11/getOne', {params: {id: req.query.id}})
         .then(function (response) {
             res.render('edit', {challenge: response.data});
         })
@@ -353,7 +351,7 @@ tableRoute = (req, res) => {
 route.get('/table', tableRoute);
 
 deleteRoute = (req, res) => {
-    axios.get('http://localhost:3000/bangquang11/getOne', {params: {id: req.query.id}})
+    axios.get('https://nodejs-mongo-challenge-manage.herokuapp.com/bangquang11/getOne', {params: {id: req.query.id}})
         .then(function (response) {
             res.render('delete', {challenge: response.data});
         })
