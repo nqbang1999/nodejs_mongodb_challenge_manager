@@ -54,7 +54,7 @@ html {
     /*padding-left: 5%;*/
     /*padding-top: 8px;*/
     font-weight: lighter;
-    font-family: cursive;
+    /*font-family: cursive;*/
     border-color: lightgray;
     padding-left: 5%;
     padding-top: 8px;
@@ -101,7 +101,7 @@ html {
 
 .post-title-text {
     font-weight: lighter;
-    font-family: cursive;
+    /*font-family: cursive;*/
     border-color: lightgray;
     width: 90%;
     padding-left: 5%;

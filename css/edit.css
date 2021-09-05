@@ -64,14 +64,14 @@ body {
 }
 
 .post-button-create {
-    height: 161px;
+    height: 100px;
     background-color: coral;
     color: white;
     border: none;
     width: 54%;
     border-radius: 8px;
     box-shadow: 2px 3px 8px -1px black;
-    font-size: 223%;
+    font-size: 111%;
     font-weight: normal;
     margin-left: 15px;
 }

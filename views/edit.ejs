@@ -30,7 +30,7 @@
                     <textarea  name="title" style="font-size: 100%" class="post-title-text" placeholder="Title"><%= challenge.title %></textarea>
                 </div>
                 <div class="challenge__status">
-                    <select class="challenge__status__list" style="font-size: 222%" name="status">
+                    <select class="challenge__status__list" style="font-size: 100%" name="status">
                         <option style="font-size: 30%;" value="In Progress" >In Progress</option>
                         <option style="font-size: 30%;" value="Done">Done</option>
                         <option style="font-size: 30%;" value="Overdue">Overdue</option>
@@ -39,7 +39,7 @@
                 <div class="post-content">
                     <textarea  name="note" style="height: 200px; font-size: 100%" class="post-content-text" placeholder="Note"><%= challenge.note %></textarea>
                 </div>
-                <div style="font-size: 221%;" class="post-title">
+                <div class="post-title">
                     <span style="font-size: 103%" class="post-title-text">Deadline</span>
                     <input style="font-size: 86%" type="date" id="finishDay" name="finishDay" value="<%= challenge.finishDay %>">
                 </div>
