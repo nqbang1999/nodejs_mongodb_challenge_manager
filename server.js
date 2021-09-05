@@ -373,8 +373,8 @@ app.get('/', (req, res) => {
     console.log('render home: after')
 })
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 app.listen(port, () => {
-    console.log('server running at port: 3000')
+    console.log('server running at port: ' + port)
     console.log('vao day: ' + bangquang11)
 })
