@@ -291,21 +291,17 @@ homeRoute = (req, res) => {
         axios.get('http://localhost:3000/bangquang11/updateByCurrentTime')
             .then(function () {
                 console.log('qua updateByCurrentTime chua')
-            })
-    } catch (err) {
-        next(err);
-    }
+            }).catch(err => {
+            throw err}
+    })
 
-    try {
-        axios.get('http://localhost:3000/bangquang11/all')
-            .then(function (response) {
-                res.render('home', {challenges: response.data});
-            })
-
-    } catch (err) {
-        next(err)
-    }
-
+    axios.get('http://localhost:3000/bangquang11/all')
+        .then(function (response) {
+            res.render('home', {challenges: response.data});
+        })
+        .catch(err => {
+            throw error
+        })
 }
 route.get('/', homeRoute);
 
