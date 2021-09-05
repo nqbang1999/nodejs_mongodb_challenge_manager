@@ -292,17 +292,17 @@ homeRoute = (req, res) => {
             .then(function () {
                 console.log('qua updateByCurrentTime chua')
             }).catch(err => {
-            throw err})
+            throw err;})
 
         axios.get('http://localhost:3000/bangquang11/all')
             .then(function (response) {
                 res.render('home', {challenges: response.data});
             })
             .catch(err => {
-                throw err
+                throw err;
             })
     } catch (error) {
-        throw error
+        throw error;
     }
 
 }
