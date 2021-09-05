@@ -161,7 +161,7 @@ const updateByCurrentTime = (req, res) => {
                 if (daysLeftUpdated == 0) {
                     data[i].status = 'Overdue'
                 }
-                data[i].save()
+                data[i].save();
             }
         })
         .catch(err => {
@@ -342,7 +342,7 @@ route.get('/edit', editRoute);
 
 tableRoute = (req, res) => {
     // make a req api
-    axios.get('http://localhost:3000/bangquang11/findAllToDisplayInTable')
+    axios.get('https://nodejs-mongo-challenge-manage.herokuapp.com/bangquang11/findAllToDisplayInTable')
         .then(function (response) {
             res.render('table', {challenges: response.data});
         })
@@ -379,7 +379,7 @@ app.use(express.static(__dirname + '/js'));
 //     console.log('render home: after')
 // })
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('server running at port: ' + port)
     console.log('vao day: ' + bangquang11)
